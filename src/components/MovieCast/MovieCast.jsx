@@ -24,7 +24,7 @@ const MovieCast = () => {
       {actors && (
         <ul className={css.actorsList}>
           {actors.map(actor => (
-            <li key={actor.id}>
+            <li className={css.actorItem} key={actor.id}>
               <img
                 src={`https://image.tmdb.org/t/p/w300${actor.profile_path}`}
                 alt={actor.name}
