@@ -8,6 +8,7 @@
   width: 300px;
   scale: 1;
   transition: scale 300ms ease-in-out;
+  cursor: pointer;
 }
 
 .actorItem:hover {
