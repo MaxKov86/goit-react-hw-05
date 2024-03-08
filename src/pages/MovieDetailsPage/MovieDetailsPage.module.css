@@ -1,0 +1,14 @@
+.movieContainer {
+  display: flex;
+  gap: 20px;
+}
+
+.movieInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.geners {
+  display: flex;
+  gap: 10px;
+}
