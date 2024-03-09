@@ -43,6 +43,7 @@ const MovieDetailsPage = () => {
           </div>
         </div>
       )}
+      <div className={css.addInfoContainer}>
       <p>Additional information</p>
       <ul className={css.addInfo}>
         <li>
@@ -52,6 +53,8 @@ const MovieDetailsPage = () => {
           <Link to="reviews">Reviews</Link>
         </li>
       </ul>
+      </div>
+      
       <Outlet />
     </>
   );

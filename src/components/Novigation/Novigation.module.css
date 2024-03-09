@@ -1,6 +1,7 @@
 .nav {
+  font-size: 20px;
   display: flex;
-  gap: 8px;
+  gap: 15px;
 }
 .link {
   text-decoration: none;
@@ -8,4 +9,12 @@
 }
 .active {
   color: tomato;
+}
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px black;
+  box-shadow: 2px 1px 3px rgba(0, 0, 0, 0.548);
 }

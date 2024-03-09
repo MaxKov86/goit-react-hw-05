@@ -41,3 +41,12 @@ export const getReviews = async id => {
 
   return response.data.results;
 };
+
+export const getMoviesByQuery = async searchQuery => {
+  const response = await axios.get(
+    `/search/movie?query=${searchQuery}&include_adult=false&language=en-US&page=1`,
+    options
+  );
+  console.log(response.data.results);
+  return response.data.results;
+};

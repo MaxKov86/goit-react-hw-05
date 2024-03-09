@@ -7,16 +7,19 @@ const makeClassActive = ({ isActive }) => {
 };
 const Novigation = () => {
   return (
-    <header>
-      <nav className={css.nav}>
-        <NavLink className={makeClassActive} to="/">
-          Home
-        </NavLink>
-        <NavLink className={makeClassActive} to="/movies">
-          Movies
-        </NavLink>
-      </nav>
-    </header>
+    <>
+      <header className={css.header}>
+        <nav className={css.nav}>
+          <NavLink className={makeClassActive} to="/">
+            Home
+          </NavLink>
+          <NavLink className={makeClassActive} to="/movies">
+            Movies
+          </NavLink>
+        </nav>
+      </header>
+     
+    </>
   );
 };
 
