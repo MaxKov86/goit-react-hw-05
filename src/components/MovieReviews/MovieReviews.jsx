@@ -19,7 +19,7 @@ const MovieReviews = () => {
   }, [movieId]);
   return (
     <>
-      {reviews && (
+      {reviews(
         <ul>
           {reviews.map(review => (
             <li key={review.id}>

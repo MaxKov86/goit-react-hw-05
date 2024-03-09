@@ -8,6 +8,7 @@ const HomePage = () => {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
+
   useEffect(() => {
     const getMovies = async () => {
       try {
@@ -23,6 +24,7 @@ const HomePage = () => {
     };
     getMovies();
   }, []);
+
   return (
     <div>
       <h1>Trending Movies</h1>
