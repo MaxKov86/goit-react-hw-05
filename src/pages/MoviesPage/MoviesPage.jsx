@@ -5,6 +5,8 @@ import MovieList from '../../components/MovieList/MovieList';
 import toast, { Toaster } from 'react-hot-toast';
 import Loading from '../../components/Loading/Loading';
 import Error from '../../components/Error/Error';
+import css from './MoviesPage.module.css';
+import { IoSearch } from 'react-icons/io5';
 
 const MoviesPage = () => {
   const [searchedMovies, setSearchedMovies] = useState([]);
@@ -36,6 +38,7 @@ const MoviesPage = () => {
     const searchQuery = form.elements.searchQuery.value.trim();
     if (searchQuery === '') {
       toast('🙃 Pleas input something!');
+      return;
     }
     params.set('query', searchQuery);
     setParams(params);
@@ -44,14 +47,17 @@ const MoviesPage = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form className={css.form} onSubmit={handleSubmit}>
         <input
+          className={css.formInput}
           type="text"
           name="searchQuery"
           placeholder="Search Movie..."
           autoComplete="off"
         />
-        <button type="submit">Search</button>
+        <button className={css.formButton} type="submit">
+          <IoSearch className={css.icon} />
+        </button>
       </form>
       {isLoading && <Loading />}
       {error && <Error />}

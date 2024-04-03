@@ -1,0 +1,28 @@
+.form {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+.formInput {
+  width: 400px;
+  height: 30px;
+  border: none;
+  border-bottom: solid 1px black;
+
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+.formButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.formInput::placeholder {
+  font-size: 16px;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+}

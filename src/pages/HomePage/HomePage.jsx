@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import MovieList from '../../components/MovieList/MovieList';
 import Loading from '../../components/Loading/Loading';
 import Error from '../../components/Error/Error';
+import css from './HomePage.module.css'
 
 const HomePage = () => {
   const [movies, setMovies] = useState([]);
@@ -27,7 +28,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <h1>Trending Movies</h1>
+      <h1 className={css.title}>Trending Movies</h1>
       {loading && <Loading />}
       {error && <Error />}
       <MovieList movies={movies} />

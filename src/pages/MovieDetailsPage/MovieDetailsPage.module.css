@@ -2,6 +2,7 @@
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 .movieInfo {
@@ -23,4 +24,27 @@
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 20px;
+  margin-left: 10px;
+}
+.goBack {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.iconGoBack {
+  width: 50px;
+  height: 50px;
+}
+.moviePoster {
+  border-radius: 5px;
+}
+.addInfoLink {
+  color: black;
+  text-decoration: underline;
+  transition: color 300ms ease-in-out;
+}
+.addInfoLink:hover {
+  color: tomato;
 }

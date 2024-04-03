@@ -6,11 +6,7 @@
 }
 .actorItem {
   width: 300px;
-  scale: 1;
-  transition: scale 300ms ease-in-out;
-  cursor: pointer;
 }
-
-.actorItem:hover {
-  scale: 1.05;
+.actorImg {
+  border-radius: 5px;
 }
